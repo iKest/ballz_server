@@ -1,0 +1,62 @@
+{
+    "name": "ballzy",
+    "version": "1.0.0",
+    "description": "Back-end for Ballzy client",
+    "main": "server.js",
+    "repository": "bitbucket:the_only_one_team/server",
+    "scripts": {
+        "start": "nodemon server.js",
+        "newdb": "node servicedb.js -D -U",
+        "syncdb": "node servicedb.js -U"
+    },
+    "author": {
+        "name": "Konstantin <iKest> Sedykh",
+        "email": "ikestster@gmail.com",
+        "url": "https://ballshift.com"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "@awaitjs/express": "^0.2.0",
+        "app-root-path": "^2.1.0",
+        "await-to-js": "^2.1.1",
+        "commander": "^2.19.0",
+        "config": "^3.0.1",
+        "consign": "^0.1.6",
+        "cors": "^2.8.5",
+        "debug": "^4.1.1",
+        "express": "^4.16.3",
+        "express-handlebars": "^3.0.0",
+        "express-validator": "^5.3.1",
+        "helmet": "^3.15.0",
+        "inquirer": "^6.2.1",
+        "json5": "^2.1.0",
+        "make-error-cause": "^2.2.0",
+        "md5": "^2.2.1",
+        "moment": "^2.22.2",
+        "morgan": "^1.9.1",
+        "mysql2": "^1.6.1",
+        "nodemon": "^1.18.9",
+        "object.fromentries": "^2.0.0",
+        "path": "^0.12.7",
+        "sequelize": "^4.38.0",
+        "supports-color": "^6.1.0",
+        "validator": "^10.11.0",
+        "winston": "^3.2.1",
+        "winston-loggly-bulk": "git+https://github.com/loggly/winston-loggly-bulk.git#3.x",
+        "xmlbuilder": "^10.1.1"
+    },
+    "devDependencies": {
+        "eslint": "^5.12.1",
+        "eslint-config-airbnb-standard": "^2.1.6",
+        "eslint-config-prettier": "^4.0.0",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-plugin-import": "^2.15.0",
+        "eslint-plugin-jsx-a11y": "^6.2.0",
+        "eslint-plugin-node": "^8.0.1",
+        "eslint-plugin-prettier": "^3.0.1",
+        "eslint-plugin-promise": "^4.0.1",
+        "eslint-plugin-react": "^7.12.4",
+        "eslint-plugin-standard": "^4.0.0",
+        "prettier": "^1.16.1"
+    }
+}

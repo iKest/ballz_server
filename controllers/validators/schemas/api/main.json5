@@ -1,0 +1,20 @@
+{
+    user_id: {
+        in: 'body',
+        errorMessage: 'user_id is wrong',
+        isInt: true,
+        toInt: true
+    },
+    platform: {
+        in: 'body',
+        errorMessage: 'platform is wrong',
+        isIn: {
+            options: [['vk', 'ok', 'fk']]
+        }
+    },
+    sig: {
+        in: 'body',
+        errorMessage: 'sig is wrong',
+        isMD5: true
+    }
+}

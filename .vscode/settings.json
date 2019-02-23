@@ -1,0 +1,54 @@
+{
+    // ===
+    // Spacing
+    // ===
+
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+
+    // ===
+    // Files
+    // ===
+
+    "files.associations": {
+        ".markdownlintrc": "jsonc",
+        ".json5.example": "json5"
+    },
+
+    // ===
+    // Event Triggers
+    // ===
+
+    "prettier.eslintIntegration": true,
+    "prettier.stylelintIntegration": true,
+    "eslint.autoFixOnSave": true,
+    "editor.formatOnSave": true,
+
+    // ===
+    // HTML
+    // ===
+
+    "html.format.enable": false,
+    "emmet.triggerExpansionOnTab": true,
+
+    // ===
+    // JS(ON)
+    // ===
+
+    "javascript.format.enable": false,
+    "json.format.enable": false,
+
+    // ===
+    // MARKDOWN
+    // ===
+
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 80
+    }
+}

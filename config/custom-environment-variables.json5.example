@@ -1,0 +1,12 @@
+{
+    db: {
+        database: 'DB_NAME',
+        params: {
+            host: 'DB_HOST',
+            port: 'DB_PORT',
+        }
+    },
+    app: {
+        port: 'PORT'
+    },
+}

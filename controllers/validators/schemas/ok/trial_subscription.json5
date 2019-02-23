@@ -1,0 +1,14 @@
+{
+    'extra_attributes.action': {
+        in: 'query',
+        errorMessage: 'action is wrong',
+        equals: {
+            options: 'trial_subscription'
+        }
+    },
+    'extra_attributes.subscriptionEndDate': {
+        in: 'query',
+        errorMessage: 'subscriptionEndDate is wrong',
+        isRFC3339: true
+    }
+}

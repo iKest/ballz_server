@@ -1,0 +1,25 @@
+{
+    notification_type: {
+        in: 'body',
+        errorMessage: 'notification_type: is wrong',
+        isIn: {
+            options: [['get_item', 'get_item_test', 'get_subscription', 'get_subscription_test']]
+        }
+    },
+    order_id: {
+        in: 'body',
+        errorMessage: 'order_id is wrong',
+        isInt: true,
+        toInt: true
+    },
+    item: {
+        in: 'body',
+        errorMessage: 'item is wrong',
+        exists: {
+            options: {
+                checkFalsy: true
+            }
+        },
+        isString: true
+    }
+}

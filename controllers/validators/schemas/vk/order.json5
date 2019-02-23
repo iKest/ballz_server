@@ -1,0 +1,47 @@
+{
+    notification_type: {
+        in: 'body',
+        errorMessage: 'notification_type: is wrong',
+        isIn: {
+            options: [['order_status_change', 'order_status_change_test']]
+        }
+    },
+    order_id: {
+        in: 'body',
+        errorMessage: 'order_id is wrong',
+        isInt: true,
+        toInt: true
+    },
+    date: {
+        in: 'body',
+        errorMessage: 'date_id is wrong',
+        isInt: true,
+        toInt: true
+    },
+    status: {
+        in: 'body',
+        errorMessage: 'status is wrong',
+        equals: {
+            options: 'chargeable'
+        }
+    },
+    item_id: {
+        in: 'body',
+        errorMessage: 'item_id is wrong',
+        isInt: true,
+        toInt: true
+    },
+    item_price: {
+        in: 'body',
+        errorMessage: 'item_price is wrong',
+        isInt: true,
+        toInt: true
+    },
+    item_discount: {
+        in: 'body',
+        optional: true,
+        errorMessage: 'item_discount is wrong',
+        isInt: true,
+        toInt: true
+    }
+}

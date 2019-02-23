@@ -1,0 +1,8 @@
+{
+    transaction_id: {
+        in: 'query',
+        errorMessage: 'transaction_id is wrong',
+        isInt: true,
+        toInt: true
+    }
+}

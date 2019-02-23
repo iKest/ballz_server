@@ -1,0 +1,25 @@
+{
+    app_id: {
+        in: 'body',
+        errorMessage: 'app_id is wrong',
+        isInt: true,
+        toInt: true
+    },
+    user_id: {
+        in: 'body',
+        errorMessage: 'user_id is wrong',
+        isInt: true,
+        toInt: true
+    },
+    receiver_id: {
+        in: 'body',
+        errorMessage: 'receiver_id is wrong',
+        isInt: true,
+        toInt: true
+    },
+    sig: {
+        in: 'body',
+        errorMessage: 'sig is wrong',
+        isMD5: true
+    }
+}

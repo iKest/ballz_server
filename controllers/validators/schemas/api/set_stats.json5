@@ -1,0 +1,21 @@
+{
+    method: {
+        in: 'body',
+        errorMessage: 'method is wrong',
+        equals: {
+            options: 'set_stats'
+        }
+    },
+    level: {
+        in: 'body',
+        errorMessage: 'level is wrong',
+        isInt: true,
+        toInt: true
+    },
+    score: {
+        in: 'body',
+        errorMessage: 'score is wrong',
+        isInt: true,
+        toInt: true
+    }
+}

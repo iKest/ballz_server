@@ -1,0 +1,20 @@
+{
+    'extra_attributes.action': {
+        in: 'query',
+        errorMessage: 'action is wrong',
+        isIn: {
+            options: [['reg_subscription', 'unsubscribe']]
+        }
+    },
+    'extra_attributes.subscriptionEndDate': {
+        in: 'query',
+        errorMessage: 'subscriptionEndDate is wrong',
+        isRFC3339: true
+    },
+    transaction_id: {
+        in: 'query',
+        errorMessage: 'transaction_id is wrong',
+        isInt: true,
+        toInt: true
+    }
+}

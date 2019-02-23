@@ -1,0 +1,55 @@
+{
+    uid: {
+        in: 'query',
+        errorMessage: 'uid is wrong',
+        isInt: true,
+        toInt: true
+    },
+    amount: {
+        in: 'query',
+        errorMessage: 'amount is wrong',
+        isInt: true,
+        toInt: true
+    },
+    call_id: {
+        in: 'query',
+        errorMessage: 'call_id is wrong',
+        isInt: true,
+        toInt: true
+    },
+    transaction_time: {
+        in: 'query',
+        errorMessage: 'transaction_time is wrong',
+        exists: {
+            options: {
+                checkFalsy: true
+            }
+        },
+        isString: true
+    },
+    product_code: {
+        in: 'query',
+        errorMessage: 'product_code is wrong',
+        exists: {
+            options: {
+                checkFalsy: true
+            }
+        },
+        isString: true
+    },
+    sig: {
+        in: 'query',
+        errorMessage: 'sig is wrong',
+        isMD5: true
+    },
+    application_key: {
+        in: 'query',
+        errorMessage: 'application_key is wrong',
+        exists: {
+            options: {
+                checkFalsy: true
+            }
+        },
+        isString: true
+    }
+}

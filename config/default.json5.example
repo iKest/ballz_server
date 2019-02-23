@@ -1,0 +1,80 @@
+{
+    db: {
+        params: {
+            dialect: 'mysql',
+            operatorsAliases: false,
+            pool: {
+                max: 10,
+                min: 0,
+                acquire: 30000,
+                idle: 10000
+            },
+            define: {
+                underscored: true,
+                freezeTableName: true
+            }
+        }
+    },
+    app: {
+        protocol: 'http',
+        https: false,
+        clientUrl: 'http://localhost:8080',
+        port: 8843,
+        logger: false,
+        loggers: {
+            name: 'Console',
+            options: {
+                level: 'debug',
+                handleExceptions: true,
+                json: true,
+                colorize: true
+            }
+        },
+        staticFolder: '/public_html',
+        staticURL: '/'
+    },
+    routes: {
+        client: {
+            api: '/ballz/app'
+        },
+        ok: {
+            payment: '/ballz/socials/ok/payment'
+        },
+        vk: {
+            payment: '/ballz/socials/vk/payment'
+        },
+        fk: {
+            payment: '/ballz/socials/fake/payment'
+        }
+    },
+    socials: {
+        vk: {
+            secret: '',
+            service: '',
+            id: 12345
+        },
+        ok: {
+            secret: '',
+            service: '',
+            id: 12345
+        }
+    },
+    newUser: {
+        amo: [
+            'ice_s',
+            'air_s',
+            'fire_s',
+            'earth_s',
+            'shark_s',
+            'ice_s',
+            'air_s',
+            'fire_s',
+            'earth_s',
+            'shark_s'
+        ],
+        cash: 100
+    },
+    shop: {
+        images: 'http://localhost:8080/assets/icons/'
+    }
+}

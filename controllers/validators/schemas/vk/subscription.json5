@@ -1,0 +1,54 @@
+{
+    notification_type: {
+        in: 'body',
+        errorMessage: 'notification_type: is wrong',
+        isIn: {
+            options: [['subscription_status_change', 'subscription_status_change_test']]
+        }
+    },
+    cancel_reason: {
+        in: 'body',
+        optional: true,
+        errorMessage: 'cancel_reason: is wrong',
+        isIn: [['user_decision', 'app_decision', 'payment_fail', 'unknown']]
+    },
+    item_id: {
+        in: 'body',
+        errorMessage: 'item_id is wrong',
+        isInt: true,
+        toInt: true
+    },
+    item_price: {
+        in: 'body',
+        errorMessage: 'item_price is wrong',
+        isInt: true,
+        toInt: true
+    },
+    status: {
+        in: 'body',
+        errorMessage: 'status is wrong',
+        isIn: {
+            options: [['chargeable', 'active', 'cancelled']]
+        }
+    },
+    subscription_id: {
+        in: 'body',
+        errorMessage: 'subscription_id is wrong',
+        isInt: true,
+        toInt: true
+    },
+    next_bill_time: {
+        optional: true,
+        in: 'body',
+        errorMessage: 'next_bill_time is wrong',
+        isInt: true,
+        toInt: true
+    },
+    pending_cancel: {
+        optional: true,
+        in: 'body',
+        errorMessage: 'pending_cancel is wrong',
+        isInt: true,
+        toInt: true
+    }
+}

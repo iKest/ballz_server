@@ -1,0 +1,14 @@
+{
+    method: {
+        in: 'body',
+        errorMessage: 'method is wrong',
+        equals: {
+            options: 'set_amo'
+        }
+    },
+    amo: {
+        in: 'body',
+        errorMessage: 'amo is wrong',
+        isArray: true
+    }
+}

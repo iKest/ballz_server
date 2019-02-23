@@ -1,0 +1,9 @@
+{
+    method: {
+        in: 'body',
+        errorMessage: 'method is wrong',
+        equals: {
+            options: 'get_amo'
+        }
+    }
+}

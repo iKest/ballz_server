@@ -1,0 +1,37 @@
+{
+    user_id: {
+        in: 'query',
+        errorMessage: 'user_id is wrong',
+        isInt: true,
+        toInt: true
+    },
+    item: {
+        in: 'query',
+        errorMessage: 'item is wrong',
+        exists: {
+            options: {
+                checkFalsy: true
+            }
+        },
+        isString: true
+    },
+    sig: {
+        in: 'query',
+        errorMessage: 'sig is wrong',
+        isMD5: true
+    },
+    platform: {
+        in: 'query',
+        errorMessage: 'platform is wrong',
+        equals: {
+            options: 'fk'
+        }
+    },
+    method: {
+        in: 'query',
+        errorMessage: 'method is wrong',
+        isIn: {
+            options: [['get_item', 'buy_item']]
+        }
+    }
+}
